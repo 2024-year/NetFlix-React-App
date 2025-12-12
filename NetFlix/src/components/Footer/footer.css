@@ -1,0 +1,14 @@
+.footer_container{
+ 
+}
+.footer_container ul li{
+    color: rgb(190, 187, 187);
+    list-style: none;
+    padding: 9px;
+   
+}
+.service_code{
+    border: 1.5px solid white;
+    width: 135px;
+
+}

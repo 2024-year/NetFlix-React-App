@@ -1,14 +1,12 @@
-import { useState } from 'react'
-
-
+// import react from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Pages/Home/Home'
+import '../src/App.css'
 function App() {
-
-
   return (
-    <>
-
-
-    </>
+    <div className='app'>
+<Home/>
+    </div>
   )
 }
 

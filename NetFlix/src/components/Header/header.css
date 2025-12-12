@@ -1,0 +1,27 @@
+.nav_outer_container{
+    text-align: center;
+
+
+}
+.nav_container{
+    justify-content: space-between;
+    text-align: end;
+}
+.link{
+color: black;
+color: white;
+
+
+}
+.link:hover{
+    
+color: white;
+}
+.nav_left{
+    padding-left: 2px;
+
+}
+.nav_right link{
+    margin-right: 0px;
+    padding: 0px;
+}
