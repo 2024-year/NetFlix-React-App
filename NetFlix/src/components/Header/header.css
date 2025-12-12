@@ -1,8 +1,9 @@
 .nav_outer_container{
     text-align: center;
-
+padding-top: 9px;
 
 }
+
 .nav_container{
     justify-content: space-between;
     text-align: end;
