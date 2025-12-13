@@ -1,0 +1,36 @@
+.banner{
+    background-image: linear-gradient( 180deg ,transparent,rgb(37,37,37,0.91 ), #111);
+}
+.banner_contets{
+    padding-top: 35vh;
+    padding-left: 20vh;
+font-size: xx-large;
+font-weight: 200;
+    color: rgb(228, 225, 225);
+}
+
+.banner_buttons button{
+    padding: 0px 50px;
+    margin-right: 20px;
+  border: 1px solid rgb(92, 91, 91);
+      border: none;
+
+}
+
+.list{
+    background-color: transparent;
+    color: white;
+    
+}
+.list:hover{
+   
+    background-color: #747070;
+
+    
+
+}
+.banner_description{
+    width: 50%;
+    font-size: 23px;
+    font-weight: 500;
+}
