@@ -15,10 +15,11 @@ const Banner = () => {
     useEffect(()=>{   
                fetch('https://api.themoviedb.org/3/discover/movie?api_key=f549f66608f7c005efefaeeb98e2087a&language=en-US&page=1&sort_by=popularity.desc').then((res)=>res.json()).then((result)=>{
 
-                const i =Math.floor ( Math.random () * result.results.length);
+                const i =Math.floor (Math.random () * result.results.length);
                 // console.log(i)
    
                 // console.log(result.results[i].backdrop_path)
+                
                  const path= result.results[i];
                    setMovie(path)
 

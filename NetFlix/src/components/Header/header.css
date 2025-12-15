@@ -9,7 +9,7 @@ padding-top: 9px;
     text-align: end;
 }
 .link{
-color: black;
+/* color: black; */
 color: white;
 
 
@@ -26,3 +26,25 @@ color: white;
     margin-right: 0px;
     padding: 0px;
 }
+ .dropdown_container{
+display: none;
+}
+
+ @media (max-width: 1059px) {
+ .dropdown_container {
+   display: block;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+}
+.nav_outer_container{
+    display: none;
+}
+div.dropdown-menu.show{
+    background-color: transparent;
+}
+
+
+
+  }
+

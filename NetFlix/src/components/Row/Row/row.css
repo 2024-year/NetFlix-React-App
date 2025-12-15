@@ -1,0 +1,25 @@
+.row-poster{
+    /* word-wrap: wrap; */
+    /* scrollbar-width: auto; */
+    overflow-x: scroll;
+    /* flex-wrap: nowrap; */
+    /* height: auto; */
+}
+.poster_img{
+    height: 280px;
+    width: 4000px;
+    overflow-y:hidden;
+    
+}
+.poster_img img:hover{
+transform: scale(1.08);
+padding-right: 1px;
+}
+.row-poster::-webkit-scrollbar{
+    display: none;
+}
+.poster_title{
+    color: white;
+    padding: 5px;
+    padding-left: 15px;
+}

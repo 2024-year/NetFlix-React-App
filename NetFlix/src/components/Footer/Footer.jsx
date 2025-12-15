@@ -19,6 +19,7 @@ const footer = () => {
   <Nav.Link className='link' href="#"><YouTubeIcon/></Nav.Link>
     </Nav>
 <ul>
+  
   <li>Audio Description</li>
   <li>Investor Relation</li>
   <li>Legal Notice</li>
