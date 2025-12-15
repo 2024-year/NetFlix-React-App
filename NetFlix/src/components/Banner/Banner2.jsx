@@ -1,47 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import axios from '../../utils/axios'
 import requests from '../../utils/requist'
+import instance from '../../utils/axios';
+
 import Container from 'react-bootstrap/esm/Container';
+
 import './banner.css'
-const Banner = () => {
+const Banner2 = () => {
     const [movie, setMovie]=useState({});
 
-    // Banner.jsx (Simplified logic for clarity)
-// ...
 
 
-    // useEffect(()=>{   
-    //            fetch('https://api.themoviedb.org/3/discover/movie?api_key=f549f66608f7c005efefaeeb98e2087a&language=en-US&page=1&sort_by=popularity.desc').then((res)=>res.json()).then((result)=>{
-
-    //             const i =Math.floor (Math.random () * result.results.length);
-    //             // console.log(i)
-   
-    //             // console.log(result.results[i].backdrop_path)
-                
-    //              const path= result.results[i];
-    //                setMovie(path)
-
-    //              console.log(path)
-                 
-
-             
-             
-    //    }) 
-              
-    //         }
-          
-      
-    // ,[]);
-
-  
      useEffect(()=>{   
        (async()=>{
           try{ 
             const requist = await axios.get(requests.fetchTrending);          
-            // console.log("hi from banner 2",requist)
-            setMovie(requist.data.results[
-              Math.floor (Math.random () * requist.data.results.length)]);
-          }
+            console.log("hi from banner 2",requist)}
           catch(error)
           {
             console.log("shtet new >>>>>>>>",error)
@@ -51,14 +25,15 @@ const Banner = () => {
       
     ,[]);
 
-    function truncate(str,n){
-      return str?.length > n ? str.substr(0,n-1)+'...':str;
-    }
+
+    // function truncate(str,n){
+    //   return str?.length > n ? str.substr(0,n-1)+'...':str;
+    // }
     return(
  <div>
   
 
-      <Container fluid className="banner" style={{
+      {/* <Container fluid className="banner" style={{
         backgroundSize:"cover",
         backgroundImage:`url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
         backgroundPosition:"center",
@@ -80,10 +55,10 @@ const Banner = () => {
           <p className="banner_description">{truncate(movie?.overview, 75)}</p>
         </div>
 
-      </Container>
+      </Container> */}
     </div>
 )
  
 }
 
-export default Banner
+export default Banner2
